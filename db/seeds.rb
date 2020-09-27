@@ -19,12 +19,8 @@ user_number = 3
 
 user_number.times do 
     User.create do |user|
-        user.email = Faker::Internet.email
-        user.password = 'password'
-        user.firstName = Faker::Name.first_name
-        user.lastName = Faker::Name.last_name
-        user.gender = Faker::Gender.binary_type
-        user.age = Faker::Number.between(from: 20, to: 60)
+        user.first_name = Faker::Name.first_name
+        user.last_name = Faker::Name.last_name
     end
 end
 u = 1
