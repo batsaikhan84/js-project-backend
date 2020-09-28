@@ -13,6 +13,7 @@ class ExpensesController < ApplicationController
         end
     end
     def create
+        byebug
         @expense = Expense.new(name: params[:name],
                                 amount: params[:amount],
                                 category: params[:category],
