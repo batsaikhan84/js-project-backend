@@ -23,7 +23,7 @@ class ExpensesController < ApplicationController
         if @expense.save
             render json: ExpenseSerializer.new(@expense).to_serialized_json
         else
-            render json: {message: 'expense not created'}
+            render json: { message: 'expense not created' }
         end
     end
 end
