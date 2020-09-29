@@ -1,24 +1,19 @@
-# README
+### Initialize the database
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```shell
+rails db:create db:migrate db:seed
+```
 
-Things you may want to cover:
+### Ruby version
 
-* Ruby version
+```shell
+ruby -v
+```
+Version `ruby 2.6.2`
 
-* System dependencies
+please install the ruby version 2.6.2 if different:
 
-* Configuration
+```shell
+rbenv install 2.6.2
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
